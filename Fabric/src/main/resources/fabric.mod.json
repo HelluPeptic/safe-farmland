@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "safefarmland",
+  "version": "${version}",
+
+  "name": "SafeFarmland",
+  "description": "Prevents farmland from being trampled by players or mobs.",
+  "authors": [ "HelluPeptic" ],
+
+  "license": "MIT",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": { "main": [ "com.safefarmland.SafefarmlandMod" ] },
+
+  "mixins": [
+    "safefarmland.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": ">=1.20",
+    "java": ">=17",
+    "collective": ">=7.91"
+  }
+}
